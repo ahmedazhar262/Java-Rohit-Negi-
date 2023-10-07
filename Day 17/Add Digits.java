@@ -1,7 +1,7 @@
 
 
 import java.util.*;
-public class Decimal_to_Binary{
+public class Add_Digits{
     public static void main(String [] args){
         Scanner sc= new Scanner(System.in);
 
@@ -10,16 +10,16 @@ public class Decimal_to_Binary{
 
         int new_num= num;
 
-        int rem, sum= 0;
+        int rem, ans= 0;
         int mul=1;
 
-        while(num>0){
-            rem=num%2;
-            num/=2;
-            sum+=mul*rem;
-            mul= mul*10;
+        while(num!=0){
+            rem=num%10;
+            num/=10;
+           ans= rem + ans;
+           
         }
 
-        System.out.println("The the output of "+ new_num+ " Is " + sum);
+        System.out.println("Sum of digits of "+ new_num+ " Are " + ans);
     }
 }
