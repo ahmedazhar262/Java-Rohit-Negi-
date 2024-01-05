@@ -20,6 +20,6 @@ public class Add_Digits{
            
         }
 
-        System.out.println("Sum of digits of "+ new_num+ " Are " + ans);
+        System.out.println("Sum of of digits of "+ new_num+ " Are " + ans);
     }
 }
